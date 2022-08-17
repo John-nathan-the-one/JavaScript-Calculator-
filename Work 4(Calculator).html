@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        button{
+            background-color: white;
+            border: 2px solid red;
+            border-radius: 5%;
+            font-size: 20px;
+            padding: 5px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        span{
+            border-bottom: 2px solid red;
+            font-size: 16px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <span id="num1-el"></span>
+    <span id="num2-el"></span>
+    <br>
+    <button id="add-btn" onclick="add()">ADD</button>
+    <button id="sub-btn" onclick="sub()">SUBTRACT</button>
+    <button id="div-btn" onclick="div()">DIVIDE</button>
+    <button id="add-btn" onclick="mul()">MULTIPLY</button>
+    <br>
+
+    <button id="sum-btn" onclick="sum()">SUM</button>
+
+    <script>
+        let num1 = 8
+        let num2 = 3
+
+        document.getElementById("num1-el").textContent = num1
+        document.getElementById("num2-el").textContent = num2
+        let sum = document.getElementById("sum-btn")
+
+        function add(){
+            let result = num1 + num2
+            sum.textContent = "Sum:" + result
+        }
+
+        function sub(){
+            let result = num1 - num2
+            sum.textContent = "Sum:" + result
+        }
+
+        function div(){
+            let result = num1 / num2
+            sum.textContent = "Sum:" + result
+        }
+
+        function mul(){
+            let result = num1 * num2
+            sum.textContent = "Sum:" + result
+        }
+    </script>
+    
+</body>
+</html>

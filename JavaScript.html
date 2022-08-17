@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JAVASCRIPT!!!!!</title>
+
+	<style type="text/css">
+	    body{
+	    	background-color: blanchedalmond;
+	    	background-size: cover;
+	    	text-align: center;
+	    }
+		#demo{
+			font-size: 30px;
+			font-weight: 700;
+			color: white;
+		}
+	</style>
+</head>
+
+
+<body>
+	<p id="demo">Omo I don dey do JavaScript oooo</p>
+
+	<button id="btn" onclick='document.getElementById("demo").innerHTML="Sapa na your mate?"'>click me</button>
+
+	<script type="text/javascript">
+
+		const btn = document.getElementById('btn');
+
+            btn.addEventListener('click', function onClick(event) {
+            //  Change text color globally
+            document.getElementById("demo").style.color = "grey";
+            document.getElementById("demo").style.fontSize = "400%";
+
+
+            //  Change text color for clicked element only
+            // event.target.style.color = 'salmon';
+});
+	</script>
+	
+
+</body>
+
+</html>
